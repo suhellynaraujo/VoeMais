@@ -23,11 +23,8 @@ public class Cadastro implements Serializable{
 	@Column(nullable = false)
 	private String nome, email, senha;	
 	
-	@OneToMany(mappedBy= "Login")
-	private List<Login> login;
+		
 	
-	@OneToMany(mappedBy= "Destino")
-	private List<Destino> destino;
 
 	
 	public Cadastro() {
