@@ -1,0 +1,105 @@
+
+.divLogin{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin:0 auto;
+    background: url("/src/assets/img/Banner-login.jpg") no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+.entrar{
+    background-color: #ea910c23;
+    padding: 50px;
+    border-radius: 5%;
+    box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.300);
+    margin: 10%;
+}
+.entrar form{
+    display: flex;
+    flex-direction: column;  
+}
+.entrar input{    
+    width: 300px;
+    margin: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid #aa56c9;  
+    
+}
+.entrar input:focus{
+    box-shadow: 0000;
+    outline:0;
+}
+.entrar h3, p{
+    text-align: center;
+    color: #ffffff;
+}
+.entrar button{
+    font-weight: bold;
+    align-items: center;
+    margin: 5px;
+    margin-left: 30%;
+    width: 100px;  
+    border-radius: 15px;
+    border: 0;
+    padding: 5px;
+    background-color: #aa56c9;    
+    color: #fff;
+}
+.entrar button:hover{
+    background-color: #ea910c;
+    color: #fff;
+}
+.senha{
+   text-align: center;
+   text-decoration: none;
+   color: #ffff;
+   margin: 10px;
+   font-size: 14px;
+}
+.senha:hover{
+    color:#ea910c;
+    font-weight: bold;
+
+}
+.clique{
+    color:#aa56c9;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.clique:hover{
+    color: #ea910c;
+}
+.midias{
+    padding: 10px;
+   
+}
+.midias i{
+    font-size: 20px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+  
+}
+@media (max-width: 375px){
+
+    .entrar{
+        background-color: #ea910c23;
+        padding: 20px;
+        border-radius: 5%;
+        box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.300);
+        margin: 10%;
+    }
+}
+@media(max-width: 320px){
+    .entrar{
+        background-color: #ea910c23;
+        padding:0;
+        border-radius: 5%;
+        box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.300);
+        margin: 20%;
+    }
+}

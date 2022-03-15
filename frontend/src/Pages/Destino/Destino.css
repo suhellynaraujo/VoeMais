@@ -1,0 +1,46 @@
+
+.destino {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("/src/assets/img/Tropical.jpg") no-repeat center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.fundo {
+    background-color: #aa56c93a;
+    border-radius: 20px;
+    padding: 100px;
+    box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.300);
+}
+
+.formdestino {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 720px) {
+    .destino {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+
+    }
+}
+@media(max-width: 425px){ 
+    
+.fundo {    
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.300);
+}
+
+
+}

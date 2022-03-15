@@ -1,0 +1,56 @@
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.titulo p{
+    max-width: 500px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.cardfee{   
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 250px 200px 30px;
+    grid-template-areas: "imagem" "texto" "status";
+    font-family: roboto;
+    background:rgb(255, 255, 255); 
+    border-radius: 15px;
+    text-align: center;  
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    margin: 30px;
+    
+   
+
+}
+.cardfee-imagem1{
+    grid-area: imagem;
+    background: url("/src/assets/img/people.jpg"); 
+    border-radius: 500px;
+    background-size: cover;  
+   
+}
+.cardfee-texto{
+    grid-area: texto;
+    margin: 25px;
+ 
+}
+.cardfee-texto .nome{
+    color: #ea930c;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cardfee-texto p{
+    color: #ea930c;
+    font-size: 16px;
+    font-weight: 300;
+}
+.cardfee h2{
+    color: #aa56c9;
+    margin-top: 0px;
+    font-size: 25px;
+    font-weight: bold;
+}

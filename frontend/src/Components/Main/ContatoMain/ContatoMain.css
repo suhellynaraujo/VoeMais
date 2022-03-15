@@ -1,0 +1,110 @@
+.m{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: url("../../../assets/img/Green.jpg") no-repeat center ;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.titulos {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #ffff;
+}
+.contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+    background-color: #ea910c23;
+    padding: 50px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.300);
+   
+}
+
+.sobreAgencia{      
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 50%;          
+}
+
+.divMensagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+   
+  
+}.divMensagem  .btn, textarea,input{
+    margin: 5px;
+    border-radius: 15px;
+    padding:10px;
+    border: 1px solid #aa56c9;   
+}
+.divMensagem  .btn:focus, textarea:focus input:focus{
+    box-shadow:0000;
+    outline: 0;
+ }
+ .formMensagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.divMensagem .btn{
+    margin: 5px; 
+    width: 100px;  
+    border-radius: 15px;
+    border: 0;
+    padding: 5px;
+    font-weight: bold;
+    background-color: #aa56c9;
+    color: #fff;
+   
+}
+.divMensagem .btn:hover{
+    background-color: #ea910c;
+    color: #fff;
+}
+
+
+@media(max-width: 720px) {
+
+
+  .contato {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+    
+    
+  }
+  
+.sobreAgencia{      
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 100%;          
+}
+
+.m{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: url("../../../assets/img/Green.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+  }
+ 
+   

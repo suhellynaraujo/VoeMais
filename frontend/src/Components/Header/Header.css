@@ -1,0 +1,210 @@
+.Header{    
+    background: url("/src/assets/img/Banner-1920x1080.png") no-repeat center;
+    height: 95vh;
+    width: 100%;
+    padding-top: 50px;  
+    background-size: cover; 
+    background-position: center;    
+    box-shadow: 0px 0px 10px 4px #aa56c9; 
+} 
+.p{
+    color: #000;
+}
+
+.men{   
+    background-color: rgba(0, 0, 0, 0.226);
+    filter: brightness(90%);
+    height: 70px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0%;
+    margin:0%;      
+}
+.men a{
+    color: rgb(255, 255, 255);   
+    text-decoration: none;
+    font-weight: bold;  
+    transition: 0.3s ease;
+
+}
+.men a:hover{
+    color: #aa56c9;  
+}
+.container {
+    display: flex;   
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    width: 50%;
+    margin-bottom: 50px;
+}
+.btn{
+    margin-top: 10px;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    font-weight: bolder; 
+    background-color: #fff;
+    color:#aa56c9;
+}
+
+.btn:hover{
+    transition: 0.3s;
+    background-color: #aa56c9;
+    color: #fff;
+}
+
+
+  
+@media(max-width: 768px) {
+      
+    .logo{     
+        margin-top: 10px;          
+        width: 60%;
+        transition: 0.3s ease;
+        cursor: pointer;  
+    }
+    .logo:hover{
+        transform: scale(1.1);
+        color: #000;
+    }
+        .Header{    
+            background: url("/src/assets/img/Banner-1920x1080.png") no-repeat center;
+            height: 90vh;
+            width: 100%;
+            padding-top: 50px;  
+            background-size: cover; 
+            background-position: center;    
+            box-shadow: 0px 0px 10px 4px #aa56c9; 
+        } 
+        
+      
+    .texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .container {
+        display: flex;   
+        justify-content: center;
+        margin-top: 5%;
+        text-align: center;
+    
+    }
+    
+    .navbaixa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #e7be34;
+        margin: 0;
+    } 
+    
+      
+      } 
+  
+  @media(max-width: 720px) {
+      
+.logo{     
+    margin-top: 10px;    
+    width: 60%;
+    transition: 0.3s ease;
+    cursor: pointer;  
+}
+.logo:hover{
+    transform: scale(1.1);
+    color: #000;
+}
+    .Header{    
+        background: url("/src/assets/img/Banner-1920x1080.png") no-repeat center;
+        height: 90vh;
+        width: 100%;
+        padding-top: 50px;  
+        background-size: cover; 
+        background-position: center;    
+        box-shadow: 0px 0px 10px 4px #aa56c9; 
+    } 
+    
+  
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;   
+    justify-content: center;
+    margin-top: 5%;
+    text-align: center;
+
+}
+
+.navbaixa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7be34;
+    margin: 0;
+    padding: 0
+} 
+
+  
+  } 
+  
+  @media(max-width: 320px) {
+           
+.logo{     
+    margin-top: 10px;    
+    width: 60%;
+    transition: 0.3s ease;
+    cursor: pointer;  
+    
+}
+.logo:hover{
+    transform: scale(1.1);
+    color: #000;
+}
+    .Header{    
+        background: url("/src/assets/img/Banner-1920x1080.png") no-repeat center;
+        height: 90vh;
+        width: 100%;
+        padding-top: 50px;  
+        background-size: cover; 
+        background-position: center;    
+        box-shadow: 0px 0px 10px 4px #aa56c9; 
+    }     
+  
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;   
+    justify-content: center;
+    margin-top: 5%;
+    text-align: center;
+
+}
+      
+  }
+  

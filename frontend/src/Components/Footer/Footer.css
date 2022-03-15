@@ -1,0 +1,18 @@
+
+footer{
+    background-color:#e7be34;
+    color: #fff;
+    text-align: center;
+    padding: 10px;  
+    font-weight: bold;  
+}
+
+.midias{
+    padding: 10px;
+}
+.midias i{
+    font-size: 20px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+}

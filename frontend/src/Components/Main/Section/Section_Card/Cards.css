@@ -1,0 +1,85 @@
+
+.card{   
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 200px 100px 50px;     
+    grid-template-areas: "imagem" "texto" "status";
+    font-family: roboto;
+    background:  white; 
+    border-radius: 15px;     
+    text-align: center;  
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.494);  
+
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.494); 
+   
+}
+.card img{
+    border-top-left-radius: 15PX;
+    border-top-right-radius: 15PX;
+    background-size: cover; 
+
+}
+.card-texto{
+    grid-area: texto;
+    margin: 10px;
+    
+ 
+}
+
+.card-texto .nome{
+    color: #ea930c;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card-texto p{
+    color: #ea930c;
+    font-size: 18px;
+    font-weight: 300;
+    font-weight: bold;
+}
+
+.card h2{
+    color: #aa56c9;
+    margin-top: 0px;
+    font-size: 25px;
+}
+
+
+
+.btn-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.btn2{
+    text-decoration: none;
+    background-color: #aa56c9;
+    color: #fff;
+   
+    padding: 12px;
+    border: 0;
+    border-radius: 20px;
+    font-weight: bold;    
+}
+.btn2:hover{
+    transition: 0.3s;
+    background-color: #ea930c;
+    color: #fff;
+
+}
+@media(max-width: 320px){
+.card-img-top{
+ width: 95%;
+}
+
+}
