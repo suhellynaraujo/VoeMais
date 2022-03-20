@@ -62,18 +62,12 @@ export default function Section(){
         <FB/>
         </section>        
         <section>
-            <Link to = "/Contato" className="btn2">Clique aqui nos de seu Feedback</Link>
+            <Link to = "/Contato" className="btn2">Clique aqui interaja conosco</Link>
         </section>
     </section>
 
     <hr/>
-    <section className="titulo">
-            <h2>Formas de pagamento</h2>
-    </section>
-        <section>
-            <Pag />
-        </section>
-
+   
 
 
     </>

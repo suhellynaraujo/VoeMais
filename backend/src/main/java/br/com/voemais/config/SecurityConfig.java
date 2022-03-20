@@ -1,4 +1,4 @@
-package br.com.voemais.config;
+/*package br.com.voemais.config;
 
 import java.util.Arrays;
 
@@ -40,4 +40,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		source.registerCorsConfiguration("/**", configuration);
 		return source;
 	}
-}
+}*/

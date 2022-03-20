@@ -1,5 +1,6 @@
-import Button_card1 from "./Button/Button_Card1";
+
 import Foz from '../../../../assets/img/Foz.jpg'
+import Button_card3 from "./Button/Button_Card3";
 export default function Card1(){
     return(
         <div class="card">
@@ -9,7 +10,7 @@ export default function Card1(){
               <h2>Apartir de $</h2>
               <p>Lorem ipsum </p>
           </div>
-          <Button_card1/>
+          <Button_card3/>
       </div>
 
     );

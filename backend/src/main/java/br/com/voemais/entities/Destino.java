@@ -26,10 +26,12 @@ public class Destino implements Serializable{
 	@ManyToOne
 	@JoinColumn(name="idCadastro")
 	private Cadastro idCadastro;
-	
+		
 	public Destino() {
 		
 	}
+	
+	
 
 	public Destino(String nome, String cidade, String uf, String ida, String volta, Cadastro idCadastro) {		
 		this.nome = nome;

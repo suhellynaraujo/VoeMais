@@ -6,8 +6,7 @@ export default function Contato(){
     return( 
 
         <>
-        <Nav></Nav>
-       
+        <Nav></Nav>     
 
         <section>
             

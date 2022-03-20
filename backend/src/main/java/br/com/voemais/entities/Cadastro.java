@@ -1,13 +1,19 @@
 package br.com.voemais.entities;
 
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+
 
 @Entity
 public class Cadastro implements Serializable{
@@ -18,12 +24,23 @@ public class Cadastro implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idCadastro;
 	
-	@Column(nullable = false)
-	private String nome, email, senha;	
+	@Column
+	@NotBlank
+	private String nome;
 	
-		
+	@Column
+	@Email
+	private String email;
 	
-
+	@Column
+	@NotBlank
+	private String senha;
+	
+	@OneToMany(mappedBy = "idDestino")
+	private Set<Destino> destino = new HashSet<>();
+	
+	@OneToMany(mappedBy = "idLogin")
+	private Set<Login> login = new HashSet<>();
 	
 	public Cadastro() {
 		
