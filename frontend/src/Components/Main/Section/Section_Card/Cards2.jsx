@@ -1,6 +1,6 @@
 import '../Section_Card/Cards.css';
-import Button_card1 from "./Button/Button_Card1";
 import london from "../../../../assets/img/london.jpg"
+import ButtonCard1 from './Button/Button_Card1';
 export default function Cards2(){
     return(
         <div class="card">
@@ -10,7 +10,7 @@ export default function Cards2(){
                 <h2>Apartir de $</h2>
                 <p>Lorem ipsum </p>
             </div>
-            <Button_card1/>
+            <ButtonCard1/>
         </div>
     );
 }
