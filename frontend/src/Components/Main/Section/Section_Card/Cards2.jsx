@@ -1,16 +1,16 @@
 import '../Section_Card/Cards.css';
 import london from "../../../../assets/img/london.jpg"
-import ButtonCard1 from './Button/Button_Card1';
+import ButtonCard2 from './Button/Button.Card2';
 export default function Cards2(){
     return(
-        <div class="card">
+        <div className="card">
           <img src={london} className="card-img-top" alt=""/>
-            <div class="card-texto">
-                <span class="nome"> Passagem</span>
+            <div className="card-texto">
+                <span className="nome"> Passagem</span>
                 <h2>Apartir de $</h2>
                 <p>Lorem ipsum </p>
             </div>
-            <ButtonCard1/>
+            <ButtonCard2/>
         </div>
     );
 }

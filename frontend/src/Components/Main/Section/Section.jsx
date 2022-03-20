@@ -29,7 +29,7 @@ export default function Section(){
     <Cards2/>
     <Cards2/>
     <Cards2/>
-       <Link to="/Destino"> <button className="btn2">Mais Destinos Internacionais</button></Link>
+       <Link to="/Destino" className="btn2"> Mais Destinos Internacionais</Link>
     </section>
 
     <hr/>

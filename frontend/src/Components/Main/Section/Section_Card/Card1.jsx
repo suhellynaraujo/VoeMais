@@ -3,7 +3,7 @@ import Foz from '../../../../assets/img/Foz.jpg'
 import ButtonCard3 from './Button/Button_Card3';
 export default function Card1(){
     return(
-        <div classNamegit ="card">
+        <div className="card">
         <img src={Foz} className="card-img-top" alt=""/>
           <div class="card-texto">
               <span class="nome"> Passagem</span>

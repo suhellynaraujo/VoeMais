@@ -1,6 +1,7 @@
 import Tropical from "../../../../../assets/img/Tropical.jpg";
 import '../../Section_Card/CardN/CardN.css';
 import ButtonCard2 from "../Button/Button.Card2";
+
 export  default function CardN(){
   
   return(
