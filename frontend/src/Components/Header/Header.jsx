@@ -30,19 +30,19 @@ export default function Header() {
             >
               <div class="navbar-nav navbaixa" >
                 <Link to="/">
-                  <a className="nav-link ">Início</a>
+                  <a href="#" className="nav-link ">Início</a>
                 </Link>
                 <Link to="/Destino">
-                  <a className="nav-link">Destino</a>
+                  <a href="#" className="nav-link">Destino</a>
                 </Link>
                 <Link to="/Promocoes">
-                  <a className="nav-link">Promoções</a>
+                  <a href="#" className="nav-link">Promoções</a>
                 </Link>
                 <Link to="/Contato">
-                  <a className="nav-link">Contato</a>
+                  <a href="#" className="nav-link">Contato</a>
                 </Link>
                 <Link to="/Login">
-                  <a className="nav-link">Login</a>
+                  <a href="#" className="nav-link">Login</a>
                 </Link>
               </div>
             </div>
