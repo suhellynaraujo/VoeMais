@@ -8,8 +8,8 @@ export default function Pag(){
        
 
         <section class="pag">
-            <img src={Payment1}/>
-            <img src={payment}/>
+            <img src={Payment1} alt="Payment1"/>
+            <img src={payment} alt="Payment"/>
         </section>
 
         </>

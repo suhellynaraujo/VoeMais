@@ -29,20 +29,20 @@ export default function Header() {
               id="navbarNavAltMarkup"
             >
               <div class="navbar-nav navbaixa" >
-                <Link to="/">
-                  <a href="#" className="nav-link ">Início</a>
+                <Link to="/" className="nav-link ">
+                  Início
                 </Link>
-                <Link to="/Destino">
-                  <a href="#" className="nav-link">Destino</a>
+                <Link to="/Destino" className="nav-link ">
+                  Destino
                 </Link>
-                <Link to="/Promocoes">
-                  <a href="#" className="nav-link">Promoções</a>
+                <Link to="/Promocoes" className="nav-link ">
+                  Promoções
                 </Link>
-                <Link to="/Contato">
-                  <a href="#" className="nav-link">Contato</a>
+                <Link to="/Contato" className="nav-link ">
+                 Contato
                 </Link>
-                <Link to="/Login">
-                  <a href="#" className="nav-link">Login</a>
+                <Link to="/Login" className="nav-link ">
+                 Login
                 </Link>
               </div>
             </div>
@@ -62,10 +62,8 @@ export default function Header() {
               </p>
             </div>
             <div>
-              <Link to="/Cadastro">
-                <a>
-                  <button className="btn">Cadastre-se</button>
-                </a>
+              <Link to="/Cadastro" className="btn">               
+                 Cadastre-se          
               </Link>
             </div>
           </div>

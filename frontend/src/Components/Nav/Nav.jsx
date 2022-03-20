@@ -27,20 +27,20 @@ export default function Nav() {
               id="navbarNavAltMarkup"
             >
               <div class="navbar-nav navbaixa">
-                <Link to="/">
-                  <a className="nav-link">Início</a>
+                <Link to="/" className="nav-link">
+                  Início
                 </Link>
-                <Link to="/Destino">
-                  <a className="nav-link">Destino</a>
+                <Link to="/Destino" className="nav-link">
+                 Destino
                 </Link>
-                <Link to="/Promocoes">
-                  <a className="nav-link">Promoções</a>
+                <Link to="/Promocoes" className="nav-link">
+                 Promoções
                 </Link>
-                <Link to="/Contato">
-                  <a className="nav-link">Contato</a>
+                <Link to="/Contato" className="nav-link">
+                Contato
                 </Link>
-                <Link to="/Login">
-                  <a className="nav-link">Login</a>
+                <Link to="/Login" className="nav-link">
+                 Login
                 </Link>
               </div>
             </div>
