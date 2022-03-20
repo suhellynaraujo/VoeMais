@@ -1,6 +1,6 @@
 import './Cards.css';
 import Nacional from "../../../../assets/img/Nacional.jpg"
-import Button_card1 from './Button/Button_Card1';
+import ButtonCard1 from './Button/Button_Card1';
 export default function Cards(){
     return(
         <div class="card">
@@ -10,7 +10,7 @@ export default function Cards(){
                 <h2>Apartir de $</h2>
                 <p>Lorem ipsum </p>
             </div>
-            <Button_card1/>
+            <ButtonCard1/>
         </div>
     );
    

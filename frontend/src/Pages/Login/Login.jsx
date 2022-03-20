@@ -15,7 +15,7 @@ export default function Login(){
         <input type="email" placeholder="Email"/>
         <input type="password" placeholder="Senha"/>
 
-        <Link to="#"className="senha"><a >Esqueceu sua Senha?</a></Link>
+        <Link to="#"className="senha">Esqueceu sua Senha?</Link>
         <button className="btn"> Entrar </button>
       </form>     
       

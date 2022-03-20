@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-export default function Button_card1(){
+export default function ButtonCard1(){
     return(
-        <Link to = "/Destino"><button class="btn2">VER MAIS</button></Link>
+        <Link to = "/Destino"><button classname="btn2">VER MAIS</button></Link>
     );
 
 

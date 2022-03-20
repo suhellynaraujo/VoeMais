@@ -7,7 +7,7 @@ export default function Pag(){
         <>
        
 
-        <section class="pag">
+        <section className="pag">
             <img src={Payment1} alt="Payment1"/>
             <img src={payment} alt="Payment"/>
         </section>

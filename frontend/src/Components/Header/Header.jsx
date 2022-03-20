@@ -14,7 +14,7 @@ export default function Header() {
               <img src={Logo2} alt="Logo2" className="logo" />
             </Link>
             <button
-              class="navbar-toggler navbar-dark"
+              className="navbar-toggler navbar-dark"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavAltMarkup"
@@ -22,13 +22,13 @@ export default function Header() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon navbar-dark"></span>
+              <span className="navbar-toggler-icon navbar-dark"></span>
             </button>
             <div
-              class="collapse navbar-collapse justify-content-end"
+              className="collapse navbar-collapse justify-content-end"
               id="navbarNavAltMarkup"
             >
-              <div class="navbar-nav navbaixa" >
+              <div className="navbar-nav navbaixa" >
                 <Link to="/" className="nav-link ">
                   Início
                 </Link>

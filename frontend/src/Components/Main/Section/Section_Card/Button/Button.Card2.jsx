@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import "../Cards.css"
-export default function Button_card2(){
+export default function ButtonCard2(){
     return(
-        <Link to = "#"><button class="btn2" >RESERVAR</button></Link>
+        <Link to = "#"><button className="btn2" >RESERVAR</button></Link>
     );
 
 

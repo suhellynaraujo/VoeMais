@@ -4,7 +4,6 @@ import Cards from './Section_Card/Cards';
 import Cards2 from './Section_Card/Cards2';
 import Card1 from './Section_Card/Card1';
 import FB from './Section_Card/CardFee/CardFb/FB';
-import Pag from './Pagamento/Pagamento';
 
 export default function Section(){    
     return(
