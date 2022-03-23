@@ -35,9 +35,10 @@ public class DestinoResource {
 		return destinoService.findById(idDestino);
 	}
 
-	@PostMapping("/")
+	@PostMapping("/salvar")
 	public ResponseEntity<Destino> save(@RequestBody Destino destino){
 		destinoService.save(destino);
+		
 		return ResponseEntity.ok().body(destino);
 	}
 	
