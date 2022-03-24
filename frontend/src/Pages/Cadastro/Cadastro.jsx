@@ -28,7 +28,8 @@ export default function Cadastro() {
   return (
     <>
       <Nav />
-      <main className="cadastro">
+      <main className="mainBanner">
+        <div className="cadastro">
         <div className="cadastrar">
           <h3>Criar Conta</h3>
           <form onSubmit={Cadastrar}>
@@ -38,6 +39,9 @@ export default function Cadastro() {
             <button className="btn"> Cadastrar </button>
           </form>
         </div>
+
+        </div>
+       
       </main>
 
       <Footer></Footer>

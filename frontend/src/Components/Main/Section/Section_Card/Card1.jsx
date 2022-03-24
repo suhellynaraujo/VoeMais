@@ -5,8 +5,8 @@ export default function Card1(){
     return(
         <div className="card">
         <img src={Foz} className="card-img-top" alt=""/>
-          <div class="card-texto">
-              <span class="nome"> Passagem</span>
+          <div className="card-texto">
+              <span className="nome"> Passagem</span>
               <h2>Apartir de $</h2>
               <p>Lorem ipsum </p>
           </div>

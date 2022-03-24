@@ -14,20 +14,16 @@ export default function Destino(){
     return( 
 
         <>
-        <Nav></Nav>                
+        <Nav></Nav>   
+       
+             
         <section class="titulo">
             <h2>Destinos Nacionais e Internacionais</h2>
         </section>
+        
+        <FomularioDestino></FomularioDestino>
 
         <section >
-        <CardN/>
-        <CardN/>
-        <CardN/>
-        <CardN/>
-        <CardN/>
-        <CardN/>
-        <CardN/>
-        <CardN/>
         <CardN/>
         <CardN/>
         <CardN/>
@@ -44,8 +40,6 @@ export default function Destino(){
 
         
         </section>
-        <hr/>
-        <FomularioDestino></FomularioDestino>
         <hr/>
         <section className="titulo">
             <h2>Formas de pagamento</h2>

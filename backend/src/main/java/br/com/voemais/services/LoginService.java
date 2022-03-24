@@ -1,6 +1,7 @@
 package br.com.voemais.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,7 +35,22 @@ public class LoginService {
 		loginRepository.save(login);
 		
 	}
+	@Transactional
+	public void update(Login login) {
+		loginRepository.save(login);
+		
+	}
 	
+	public void delete(Long id) {
+		Optional<Login> login = loginRepository.findById(id);
+		if(login.isPresent()) {
+			loginRepository.delete(login.get());
+			System.out.println(login.get().getEmail());
+		}else {
+			System.out.println("Esse cadastro não existe");
+		}
+	}
+
 	
 	
 	

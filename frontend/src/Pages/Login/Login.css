@@ -1,12 +1,16 @@
-
+.mainBanner{
+    background: url("/src/assets/img/Banner-login.jpg") no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .divLogin{
     display: flex;
     justify-content: center;
     width: 100%;
     margin:0 auto;
-    background: url("/src/assets/img/Banner-login.jpg") no-repeat ;
-    background-attachment: fixed;
-    background-size: cover;
+   
+   
+    
    
 }
 .entrar{
@@ -84,22 +88,60 @@
     color: #fff;
   
 }
-@media (max-width: 375px){
 
+@media (max-width: 768px){
+    .mainBanner{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+    }
+
+   
+}
+
+@media (max-width: 425px){
+    .mainBanner{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+    }
+
+   
+}
+
+@media (max-width: 375px){
+    .mainBanner{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+    }
     .entrar{
         background-color: #ea910c23;
-        padding: 20px;
+        padding: 10px;
         border-radius: 5%;
         box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.300);
         margin: 10%;
     }
+
+  
 }
 @media(max-width: 320px){
-    .entrar{
+
+    .mainBanner{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+      }
+      .entrar{
         background-color: #ea910c23;
-        padding:0;
+        padding: 5px;
         border-radius: 5%;
         box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.300);
-        margin: 20%;
+        margin: 10%;
     }
+  
 }

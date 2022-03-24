@@ -1,11 +1,11 @@
 import '../CardFb/Fb.css';
 export default function FB(){
     return(
-        <div class="cardfee">
-        <div class="cardfee-imagem1"></div>
-        <div class="cardfee-texto">
+        <div className="cardfee">
+        <div className="cardfee-imagem1"></div>
+        <div className="cardfee-texto">
             <h2>Lorem</h2>
-            <span class="nome">Lorem</span>
+            <span className="nome">Lorem</span>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, non minus? Iusto est dolorum
                 totam
                 sit, </p>

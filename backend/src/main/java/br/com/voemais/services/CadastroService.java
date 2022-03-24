@@ -35,6 +35,11 @@ public class CadastroService {
 		
 	}
 	
+	@Transactional(readOnly = true)
+	public void update(Cadastro cadastro) {
+		cadastroRepository.save(cadastro);
+		
+	}
 
 	/*public void delete(Long id) {
 		Optional<Cadastro> cadastro = cadastroRepository.findById(id);

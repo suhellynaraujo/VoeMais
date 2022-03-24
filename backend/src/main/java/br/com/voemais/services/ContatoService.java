@@ -1,6 +1,7 @@
 package br.com.voemais.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -33,6 +34,22 @@ public class ContatoService {
 		contatoRepository.save(contato);
 		
 	}
+	@Transactional
+	public void update(Contato contato) {
+		contatoRepository.save(contato);
+		
+	}
+	
+	public void delete(Long id) {
+		Optional<Contato> contato = contatoRepository.findById(id);
+		if(contato.isPresent()) {
+			contatoRepository.delete(contato.get());
+			System.out.println(contato.get().getEmail());
+		}else {
+			System.out.println("Esse contato não existe");
+		}
+	}
+
 	
 	
 

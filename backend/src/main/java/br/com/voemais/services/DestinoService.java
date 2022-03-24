@@ -35,6 +35,11 @@ public class DestinoService {
 		destinoRepository.save(destino);
 		
 	}
+	@Transactional(readOnly = true)
+	public void update(Destino destino) {
+		destinoRepository.save(destino);
+		
+	}
 	
 	public void delete(Long idDestino) {
 		Optional<Destino> destino = destinoRepository.findById(idDestino);
@@ -42,7 +47,7 @@ public class DestinoService {
 			destinoRepository.delete(destino.get());
 			System.out.println(destino.get().getNome());
 		}else {
-			System.out.println("Produto não existe");
+			System.out.println("Destino não existe");
 		}
 	}
 	

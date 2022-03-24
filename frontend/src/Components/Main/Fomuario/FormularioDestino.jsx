@@ -26,6 +26,7 @@ export default function FomularioDestino() {
       }).catch((err) => console.log(err));
       
   };
+  
 
   return (
     <div className="container destino ca ">
@@ -38,13 +39,9 @@ export default function FomularioDestino() {
 
           <input type="text" id="uf" name="uf" placeholder="Uf" ref={uf} required/>
 
-          <label htmlFor="ida" className="titulos" ref={ida} required>Ida</label>
+          <input type="text" id="ida" name="ida" placeholder="Ida"  ref={ida}/>
 
-          <input type="date" id="ida" name="ida" placeholder="Ida"/>
-
-          <label htmlFor="volta" className="titulos"  ref={volta} required>Volta</label>
-
-          <input type="date" id="volta" name="volta" placeholder="volta" />
+          <input type="text" id="volta" name="volta" placeholder="volta" ref={volta}/>
 
           <button className="btn2"> ENVIAR </button>
           
