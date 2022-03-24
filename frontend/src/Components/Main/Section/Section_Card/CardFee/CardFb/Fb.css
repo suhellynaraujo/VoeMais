@@ -13,7 +13,7 @@
 .cardfee{   
     display: grid;
     grid-template-columns: 250px;
-    grid-template-rows: 250px 200px 10px;
+    grid-template-rows: 250px 200px 50px;
     grid-template-areas: "imagem" "texto" "status";
     font-family: roboto;
     background:rgb(255, 255, 255); 

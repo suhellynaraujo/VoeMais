@@ -14,7 +14,7 @@
 .fundo {
     background-color: #aa56c93a;
     border-radius: 20px;
-    padding: 100px;
+    padding: 70px;
     box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.300);
 }
 
@@ -36,11 +36,19 @@
 }
 @media(max-width: 425px){ 
     
-.fundo {    
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.300);
+.fundo {   
+    padding: 10px;  
 }
 
 
 }
+
+@media(max-width: 320px){ 
+    
+    .fundo {
+        padding: 5px;
+       
+    }
+    
+    
+    }

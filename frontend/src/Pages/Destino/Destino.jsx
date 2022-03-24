@@ -20,7 +20,7 @@ export default function Destino(){
         <section class="titulo">
             <h2>Destinos Nacionais e Internacionais</h2>
         </section>
-        
+
         <FomularioDestino></FomularioDestino>
 
         <section >
@@ -31,14 +31,7 @@ export default function Destino(){
         <CardN/>
         <CardN/>
         <CardN/>
-        <CardN/>
-        <CardN/>
-        <CardN/>
-        <CardN/>
-        <CardN/>
-       
-
-        
+        <CardN/>        
         </section>
         <hr/>
         <section className="titulo">

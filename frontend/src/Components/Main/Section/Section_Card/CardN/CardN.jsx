@@ -9,12 +9,12 @@ export  default function CardN(){
     <div className="card">
       <img src={Tropical} className="card-img-top" alt="..."/>
       <div className="card-texto">
-        <span className="nome"> Passagens</span>
-        <h2>a partir de 00$</h2>
+        <span className="nome"> Passagem</span>
+        <h2>a partir de 500$</h2>
         <p>Lorem ipsum, dolor sit</p>
       </div>
       
-    <ButtonCard2/>
+    <ButtonCard2 Link to={"/Destino"}/>
     </div>
     
   );
