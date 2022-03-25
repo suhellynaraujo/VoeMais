@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.voemais.DTO.DestinoDTO;
 import br.com.voemais.entities.Destino;
 import br.com.voemais.repositories.DestinoRepository;
 
@@ -24,10 +23,10 @@ public class DestinoService {
 	}
 
 	@Transactional(readOnly = true)
-	public DestinoDTO findById(Long idDestino){
+	public Destino findById(Long idDestino){
 		Destino result = destinoRepository.findById(idDestino).get();
-		DestinoDTO dto = new DestinoDTO(result);
-		return dto;
+
+		return result;
 	}
 	
 	@Transactional(readOnly = true)

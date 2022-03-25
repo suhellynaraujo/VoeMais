@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.voemais.DTO.LoginDTO;
 import br.com.voemais.entities.Login;
 import br.com.voemais.services.LoginService;
 
@@ -34,26 +33,26 @@ public class LoginResources {
 	}
 
 	@GetMapping(value = "/{id}")
-	public LoginDTO findById(@PathVariable Long idLogin) {	
+	public Login findById(@PathVariable Long idLogin) {	
 		return logingService.findById(idLogin);
 	}
 
-	@PostMapping("/salvar")
+	@PostMapping(value = "/salvar")
 	public ResponseEntity<Login> save(@RequestBody @Valid Login login){
 		logingService.save(login);
 		return ResponseEntity.ok().body(login);
 	}
 	
-	@PutMapping("/atualizar")
+	@PutMapping(value = "/atualizar")
 	public ResponseEntity<Login> update(@RequestBody @Valid Login login){
 		logingService.save(login);
 		return ResponseEntity.ok().body(login);
 	}
 	
 	@DeleteMapping(value = "/{id}")
-	public ResponseEntity<LoginDTO> delete(@PathVariable Long id){
+	public ResponseEntity<Login> delete(@PathVariable Long id){
 		logingService.delete(id);
-		LoginDTO result = logingService.findById(id);
+		Login result = logingService.findById(id);
 		return ResponseEntity.ok().body(result);
 		
 	}

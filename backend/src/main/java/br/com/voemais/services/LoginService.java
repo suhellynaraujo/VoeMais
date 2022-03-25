@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.voemais.DTO.LoginDTO;
 import br.com.voemais.entities.Login;
 import br.com.voemais.repositories.LoginRepository;
 
@@ -24,10 +23,9 @@ public class LoginService {
 	}
 	
 	@Transactional(readOnly = true)
-	public LoginDTO findById(Long idLogin){
+	public Login findById(Long idLogin){
 		Login result = loginRepository.findById(idLogin).get();
-		LoginDTO dto = new LoginDTO(result);
-		return dto;
+		return result;
 	}
 	
 	@Transactional

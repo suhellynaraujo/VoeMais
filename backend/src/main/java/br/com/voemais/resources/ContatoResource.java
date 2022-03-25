@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.voemais.DTO.ContatoDTO;
 import br.com.voemais.entities.Contato;
 import br.com.voemais.services.ContatoService;
 
@@ -34,22 +33,22 @@ public class ContatoResource {
 	}
 	
 
-	@PostMapping("/salvar")
+	@PostMapping(value ="/salvar")
 	public ResponseEntity<Contato> save(@RequestBody Contato contato){
 		contatoService.save(contato);
 		return ResponseEntity.ok().body(contato);
 	}
 	
-	@PutMapping("/atualizar")
+	@PutMapping(value = "/atualizar")
 	public ResponseEntity<Contato> update(@RequestBody @Valid Contato contato){
 		contatoService.save(contato);
 		return ResponseEntity.ok().body(contato);
 	}
 	
 	@DeleteMapping(value = "/{id}")
-	public ResponseEntity<ContatoDTO> delete(@PathVariable Long id){
+	public ResponseEntity<Contato> delete(@PathVariable Long id){
 		contatoService.delete(id);
-		ContatoDTO result = contatoService.findById(id);
+		Contato result = contatoService.findById(id);
 		return ResponseEntity.ok().body(result);
 		
 	}

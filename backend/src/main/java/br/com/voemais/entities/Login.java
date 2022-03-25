@@ -10,8 +10,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
 
 @Entity
 public class Login implements Serializable {
@@ -22,15 +20,8 @@ public class Login implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idLogin;
 	
-	@Column	
-	@Email
-	private String email;
-	
-	
-	@Column	
-	@NotBlank
-	private String senha;
-	
+	@Column(nullable = false)
+	private String email, senha;	
 	
 	@ManyToOne
 	@JoinColumn(name="idCadastro")

@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.voemais.DTO.CadastroDTO;
 import br.com.voemais.entities.Cadastro;
 import br.com.voemais.repositories.CadastroRepository;
 
@@ -24,10 +23,9 @@ public class CadastroService {
 	}
 	
 	@Transactional(readOnly = true)
-	public CadastroDTO findById(Long id){
+	public Cadastro findById(Long id){
 		Cadastro result = cadastroRepository.findById(id).get();
-		CadastroDTO dto = new CadastroDTO(result);
-		return dto;
+		return result;
 	}
 	@Transactional(readOnly = true)
 	public void save(Cadastro cadastro) {
@@ -40,12 +38,6 @@ public class CadastroService {
 		cadastroRepository.save(cadastro);
 		
 	}
-
-	/*public void delete(Long id) {
-		Optional<Cadastro> cadastro = cadastroRepository.findById(id);
-		cadastroRepository.delete(cadastro.get());
-		
-	}*/
 	
 	public void delete(Long id) {
 		Optional<Cadastro> cadastro = cadastroRepository.findById(id);
@@ -57,9 +49,10 @@ public class CadastroService {
 		}
 	}
 
-	public Cadastro getById(Long id) {
+	public Cadastro getById(Long idCadastro) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+	
 }

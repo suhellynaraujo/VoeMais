@@ -61,7 +61,7 @@ export default function Section(){
         <FB/>
         </section>        
         <section>
-            <Link to = "/Contato" className="btn2">Fale conosco</Link>
+            <Link to = "/Contato" className="btn2">Contacte-nos</Link>
         </section>
     </section>
 

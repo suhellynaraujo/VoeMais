@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.voemais.DTO.ContatoDTO;
 import br.com.voemais.entities.Contato;
 import br.com.voemais.repositories.ContatoRepository;
 
@@ -24,10 +23,9 @@ public class ContatoService {
 	}
 
 	@Transactional(readOnly = true)
-	public ContatoDTO findById(Long idContato){
+	public Contato findById(Long idContato){
 		Contato result = contatoRepository.findById(idContato).get();
-		ContatoDTO dto = new ContatoDTO(result);
-		return dto;
+		return result;
 	}
 	@Transactional
 	public void save(Contato contato) {

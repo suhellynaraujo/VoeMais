@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.voemais.DTO.DestinoDTO;
 import br.com.voemais.entities.Destino;
 import br.com.voemais.services.DestinoService;
 
@@ -31,14 +31,18 @@ public class DestinoResource {
 	}
 
 	@GetMapping(value = "/{id}")
-	public DestinoDTO findById(@PathVariable Long idDestino) {	
+	public Destino findById(@PathVariable Long idDestino) {	
 		return destinoService.findById(idDestino);
 	}
 
-	@PostMapping("/salvar")
+	@PostMapping(value ="/salvar")
 	public ResponseEntity<Destino> save(@RequestBody Destino destino){
+		destinoService.save(destino);		
+		return ResponseEntity.ok().body(destino);
+	}
+	@PutMapping(value = "/atualizar")
+	public ResponseEntity<Destino> update(@RequestBody Destino destino){
 		destinoService.save(destino);
-		
 		return ResponseEntity.ok().body(destino);
 	}
 	

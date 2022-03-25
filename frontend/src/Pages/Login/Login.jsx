@@ -14,8 +14,7 @@ export default function Login() {
   const Logar = (event) => {
 
     event.preventDefault();
-    api
-      .post("/login/salvar", {
+    api.post("/login/salvar", {
         email: email.current.value,
         senha: senha.current.value,
       })
@@ -51,10 +50,10 @@ export default function Login() {
                 ref={senha}
                
               />
-
+              {/*
               <Link to="#" className="senha">
                 Esqueceu sua Senha?
-              </Link>
+  </Link>*/}
               <button className="btn"> Entrar </button>
             </form>
 
