@@ -11,7 +11,7 @@ import br.com.voemais.entities.Cadastro;
 import br.com.voemais.repositories.CadastroRepository;
 
 @Service
-public class CadastroService {
+public class CadastroService{
 	
 	@Autowired
 	private CadastroRepository cadastroRepository;
@@ -27,6 +27,7 @@ public class CadastroService {
 		Cadastro result = cadastroRepository.findById(id).get();
 		return result;
 	}
+	
 	@Transactional(readOnly = true)
 	public void save(Cadastro cadastro) {
 		cadastroRepository.save(cadastro);

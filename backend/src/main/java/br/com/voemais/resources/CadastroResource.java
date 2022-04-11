@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.voemais.entities.Cadastro;
@@ -20,7 +21,7 @@ import br.com.voemais.services.CadastroService;
 @RestController
 @RequestMapping("/cadastro")
 @CrossOrigin(origins = "http://localhost:3000")
-public class CadastroResource {
+public class CadastroResource  {
 	
 	@Autowired
 	private CadastroService cadastroService;
@@ -36,7 +37,7 @@ public class CadastroResource {
 		
 	}
 	
-	@PostMapping(value ="/salvar")
+	@RequestMapping (value = "/salvar", method = RequestMethod.POST)
 	public ResponseEntity<Cadastro> save(@RequestBody  Cadastro cadastro){
 		cadastroService.save(cadastro);
 		return ResponseEntity.ok().body(cadastro);

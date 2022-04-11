@@ -27,7 +27,6 @@ export default function Login() {
   };
 
 
-
   return (
     <>
       <Nav></Nav>
@@ -54,8 +53,9 @@ export default function Login() {
               <Link to="#" className="senha">
                 Esqueceu sua Senha?
   </Link>*/}
-              <button className="btn"> Entrar </button>
-            </form>
+              <button className="btn"> Entrar </button>                   
+
+            </form>                           
 
             <p>
               {" "}
@@ -64,7 +64,9 @@ export default function Login() {
                 Clique aqui!
               </Link>{" "}
             </p>
+            
           </div>
+         
             
           </div>          
         </main>

@@ -37,7 +37,7 @@ export default function FomularioDestino() {
 
           <input type="text" id="cidade" name="cidade" placeholder="Cidade" ref={cidade} required/>
 
-          <input type="text" id="uf" name="uf" placeholder="Uf" ref={uf} required/>
+          <input type="text" id="uf" name="uf" placeholder="UF" ref={uf} required/>
 
           <input type="text" id="ida" name="ida" placeholder="Ida"  ref={ida}/>
 

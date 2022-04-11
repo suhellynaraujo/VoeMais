@@ -24,6 +24,7 @@ export default function Cadastro() {
       }).catch((err) => console.log(err));
       
   };
+  
 
   return (
     <>
@@ -37,13 +38,12 @@ export default function Cadastro() {
             <input type="email" placeholder="Email" ref={email} required/>
             <input type="password" placeholder="Senha" ref={senha} required/>
             <button className="btn"> Cadastrar </button>
-          </form>
-        </div>
+           
 
-        </div>
-       
-      </main>
-
+          </form>         
+        </div> 
+        </div>       
+      </main>   
       <Footer></Footer>
     </>
   );
