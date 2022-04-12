@@ -1,4 +1,5 @@
 .mainBanner{
+    height: 100vh;
     background: url("/src/assets/img/Banner-login.jpg") no-repeat ;
     background-attachment: fixed;
     background-size: cover;
