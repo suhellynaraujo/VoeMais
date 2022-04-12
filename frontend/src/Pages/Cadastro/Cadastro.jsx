@@ -19,7 +19,7 @@ export default function Cadastro() {
       })
       .then(() => {
         alert("Cadastro realizado com sucesso!")
-        window.location.href="/Destino"
+        window.location.href="/"
 
       }).catch((err) => console.log(err));
       

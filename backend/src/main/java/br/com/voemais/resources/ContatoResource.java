@@ -18,7 +18,7 @@ import br.com.voemais.services.ContatoService;
 
 @RestController
 @RequestMapping("/contato")
-@CrossOrigin(origins = "https://voe-mais.herokuapp.com")
+@CrossOrigin(origins = "https://voemais.netlify.app/")
 public class ContatoResource {
 	
 	@Autowired
