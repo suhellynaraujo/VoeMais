@@ -79,33 +79,34 @@
 }
 
 
+  
 @media(max-width: 720px) {
 
 
-  .contato {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;   
+    .contato {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;   
+      
+      
+    }
     
-    
+  .sobreAgencia{      
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      width: 100%;          
   }
   
-.sobreAgencia{      
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    width: 100%;          
-}
-
-.m{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background: url("../../../assets/img/Banner-1920x1080.png") no-repeat center;
-    background-attachment: fixed;
-    background-size: cover;
-    margin-bottom: 50px;
-}
+  .m{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      background: url("../../../assets/img/Banner-1920x1080.png") no-repeat center;
+      background-attachment: fixed;
+      background-size: cover;
+      margin-bottom: 50px;
   }
+    }
  
    
