@@ -68,7 +68,17 @@
     color: #fff;
 }
 
-
+@media (max-width:991px) and (min-width: 769px){
+    
+    .navbaixa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #e7be34;
+        margin: 0;
+    }
+}
 
 @media(max-width: 768px) {
 
@@ -101,8 +111,13 @@
         justify-content: center;
         width: 100%;
         margin-bottom: 10px;
+        
     }
-
+    .textoH1, .textoP{
+        background-color: #ffffffa9;
+       font-weight: bold;
+        
+    }
     .container {
         display: flex;
         justify-content: center;
