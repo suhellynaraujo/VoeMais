@@ -1,9 +1,6 @@
 package br.com.voemais.resources;
 
 import java.util.List;
-
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -40,12 +37,12 @@ public class ContatoResource {
 	}
 	
 	@PutMapping(value = "/atualizar")
-	public ResponseEntity<Contato> update(@RequestBody @Valid Contato contato){
+	public ResponseEntity<Contato> update(@RequestBody  Contato contato){
 		contatoService.save(contato);
 		return ResponseEntity.ok().body(contato);
 	}
 	
-	@DeleteMapping(value = "/{id}")
+	@DeleteMapping(value = "/{idContato}")
 	public ResponseEntity<Contato> delete(@PathVariable Long id){
 		contatoService.delete(id);
 		Contato result = contatoService.findById(id);

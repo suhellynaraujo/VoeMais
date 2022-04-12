@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import br.com.voemais.entities.Cadastro;
 import br.com.voemais.entities.Destino;
 import br.com.voemais.repositories.DestinoRepository;
 
@@ -28,16 +29,24 @@ public class DestinoService {
 
 		return result;
 	}
-	
-	@Transactional(readOnly = true)
 	public void save(Destino destino) {
-		destinoRepository.save(destino);
-		
+		try {
+			destinoRepository.save(destino);
+			
+		} catch (Exception ex) {
+			throw ex;
+		}
+				
 	}
-	@Transactional(readOnly = true)
+	
 	public void update(Destino destino) {
-		destinoRepository.save(destino);
-		
+		try {
+			destinoRepository.save(destino);
+			
+		} catch (Exception ex) {
+			throw ex;
+		}
+				
 	}
 	
 	public void delete(Long idDestino) {

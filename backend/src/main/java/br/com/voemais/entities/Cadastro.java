@@ -1,27 +1,24 @@
 package br.com.voemais.entities;
 
-import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 
 @Entity
-public class Cadastro implements Serializable{
+@Table
+public class Cadastro{
 	
-	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long idCadastro;
-	
-	@Column(nullable = false )
+	private Long idCadastro;	
 	private String nome, email, senha;
 	
 		
@@ -35,18 +32,22 @@ public class Cadastro implements Serializable{
 		
 	}
 
-	public Cadastro(String nome, String email, String senha) {
+	public Cadastro(Long idCadastro, String nome, String email, String senha) {
+		super();
+		this.idCadastro = idCadastro;
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
 	}
 
-	public Long getId() {
+	
+
+	public Long getIdCadastro() {
 		return idCadastro;
 	}
 
-	public void setId(Long id) {
-		this.idCadastro = id;
+	public void setIdCadastro(Long idCadastro) {
+		this.idCadastro = idCadastro;
 	}
 
 	public String getNome() {
@@ -90,10 +91,23 @@ public class Cadastro implements Serializable{
 		return Objects.equals(idCadastro, other.idCadastro);
 	}
 
-	@Override
-	public String toString() {
-		return "Cadastro [id=" + idCadastro + ", nome=" + nome + ", email=" + email + ", senha=" + senha + "]";
+	
+	public List<Destino> getDestino() {
+		return destino;
 	}
+
+	public void setDestino(List<Destino> destino) {
+		this.destino = destino;
+	}
+
+	public List<Login> getLogin() {
+		return login;
+	}
+
+	public void setLogin(List<Login> login) {
+		this.login = login;
+	}
+	
 	
 	
 

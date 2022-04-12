@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.voemais.entities.Cadastro;
@@ -21,7 +20,7 @@ import br.com.voemais.services.CadastroService;
 @RestController
 @RequestMapping("/cadastro")
 @CrossOrigin(origins = "http://localhost:3000")
-public class CadastroResource  {
+public class CadastroResource {
 	
 	@Autowired
 	private CadastroService cadastroService;
@@ -30,21 +29,21 @@ public class CadastroResource  {
 	public List<Cadastro> findAll(){
 		return cadastroService.findAll();
 	}
-	
+
 	@GetMapping(value = "/{idCadastro}")
 	public Cadastro findById(@PathVariable Long idCadastro) {	
 		return cadastroService.findById(idCadastro);	
 		
 	}
 	
-	@RequestMapping (value = "/salvar", method = RequestMethod.POST)
+	@PostMapping(value ="/salvar")
 	public ResponseEntity<Cadastro> save(@RequestBody  Cadastro cadastro){
 		cadastroService.save(cadastro);
 		return ResponseEntity.ok().body(cadastro);
 		
 	}
 	
-	@PutMapping(value = "/atualizar")
+	@PutMapping(value ="/atualizar")
 	public ResponseEntity<Cadastro> update(@RequestBody Cadastro cadastro){
 		cadastroService.save(cadastro);
 		return ResponseEntity.ok().body(cadastro);
@@ -58,6 +57,5 @@ public class CadastroResource  {
 		return ResponseEntity.ok().body(result);
 		
 	}
-	
 	
 }

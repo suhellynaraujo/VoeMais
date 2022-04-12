@@ -11,7 +11,7 @@ import br.com.voemais.entities.Cadastro;
 import br.com.voemais.repositories.CadastroRepository;
 
 @Service
-public class CadastroService{
+public class CadastroService {
 	
 	@Autowired
 	private CadastroRepository cadastroRepository;
@@ -21,25 +21,43 @@ public class CadastroService{
 		List<Cadastro> result = cadastroRepository.findAll();
 		return result;
 	}
-	
+
 	@Transactional(readOnly = true)
-	public Cadastro findById(Long id){
-		Cadastro result = cadastroRepository.findById(id).get();
+	public Cadastro findById(Long idCadastro){
+		Cadastro result = cadastroRepository.findById(idCadastro).get();
 		return result;
 	}
 	
-	@Transactional(readOnly = true)
+	public Cadastro getById(Long idCadastro) {
+		 Optional<Cadastro> destino = cadastroRepository.findById(idCadastro);
+		 if(destino.isPresent()) {
+			 return destino.get();
+		 }else {
+			 return null;
+		 }
+	}
+	
 	public void save(Cadastro cadastro) {
-		cadastroRepository.save(cadastro);
-		
+		try {
+			cadastroRepository.save(cadastro);
+			
+		} catch (Exception ex) {
+			throw ex;
+		}
+				
 	}
 	
-	@Transactional(readOnly = true)
 	public void update(Cadastro cadastro) {
-		cadastroRepository.save(cadastro);
-		
+		try {
+			cadastroRepository.save(cadastro);
+			
+		} catch (Exception ex) {
+			throw ex;
+		}
+				
 	}
 	
+
 	public void delete(Long id) {
 		Optional<Cadastro> cadastro = cadastroRepository.findById(id);
 		if(cadastro.isPresent()) {
@@ -50,10 +68,4 @@ public class CadastroService{
 		}
 	}
 
-	public Cadastro getById(Long idCadastro) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	
 }

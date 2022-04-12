@@ -1,31 +1,27 @@
 package br.com.voemais.entities;
 
-import java.io.Serializable;
 import java.util.Objects;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
-public class Destino implements Serializable{
-
-	private static final long serialVersionUID = 1L;
+@Table
+public class Destino{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idDestino;
-	
-	@Column(nullable = false)
 	private String nome, cidade, uf, ida, volta;
 
 	@ManyToOne
 	@JoinColumn(name="idCadastro")
-	private Cadastro idCadastro;
+	private Cadastro cadastro;
 	
 	public Destino() {
 		
@@ -38,7 +34,7 @@ public class Destino implements Serializable{
 		this.uf = uf;
 		this.ida = ida;
 		this.volta = volta;
-		this.idCadastro = idCadastro;
+		this.cadastro = idCadastro;
 	}
 
 	public Long getIdDestino() {
@@ -89,12 +85,12 @@ public class Destino implements Serializable{
 		this.volta = volta;
 	}
 
-	public Cadastro getIdCadastro() {
-		return idCadastro;
+	public Cadastro getCadastro() {
+		return cadastro;
 	}
 
-	public void setIdCadastro(Cadastro idCadastro) {
-		this.idCadastro = idCadastro;
+	public void setCadastro(Cadastro idCadastro) {
+		this.cadastro = idCadastro;
 	}
 
 	@Override
@@ -114,11 +110,7 @@ public class Destino implements Serializable{
 		return Objects.equals(idDestino, other.idDestino);
 	}
 
-	@Override
-	public String toString() {
-		return "Destino [idDestino=" + idDestino + ", nome=" + nome + ", cidade=" + cidade + ", uf=" + uf + ", ida="
-				+ ida + ", volta=" + volta + ", idCadastro=" + idCadastro + "]";
-	}
+	
 	
 
 }

@@ -1,9 +1,6 @@
 package br.com.voemais.resources;
 
 import java.util.List;
-
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -38,13 +35,13 @@ public class LoginResources {
 	}
 
 	@PostMapping(value = "/salvar")
-	public ResponseEntity<Login> save(@RequestBody @Valid Login login){
+	public ResponseEntity<Login> save(@RequestBody  Login login){
 		logingService.save(login);
 		return ResponseEntity.ok().body(login);
 	}
 	
 	@PutMapping(value = "/atualizar")
-	public ResponseEntity<Login> update(@RequestBody @Valid Login login){
+	public ResponseEntity<Login> update(@RequestBody  Login login){
 		logingService.save(login);
 		return ResponseEntity.ok().body(login);
 	}
