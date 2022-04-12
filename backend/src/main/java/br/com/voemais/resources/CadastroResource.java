@@ -19,7 +19,7 @@ import br.com.voemais.services.CadastroService;
 
 @RestController
 @RequestMapping("/cadastro")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://voe-mais.herokuapp.com")
 public class CadastroResource {
 	
 	@Autowired

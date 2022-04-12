@@ -19,7 +19,7 @@ import br.com.voemais.services.DestinoService;
 
 @RestController
 @RequestMapping("/destino")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://voe-mais.herokuapp.com")
 public class DestinoResource {
 	
 	@Autowired
