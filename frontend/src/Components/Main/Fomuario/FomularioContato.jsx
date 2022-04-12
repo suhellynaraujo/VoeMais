@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import api from "../../../Server/api";
-import { BASE_URL } from "../../../Server/requests"
 import "../ContatoMain/ContatoMain.css"
 
 export default function FomularioContato(){
@@ -11,7 +10,7 @@ export default function FomularioContato(){
  
   const Salvar = (event) => {
     event.preventDefault();   
-      BASE_URL.post("/contato/salvar", {
+      api.post("/contato/salvar", {
         email: email.current.value,
         mensagem: mensagem.current.value,
       }).then(() => {
