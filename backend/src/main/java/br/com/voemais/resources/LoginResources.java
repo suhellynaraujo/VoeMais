@@ -18,7 +18,7 @@ import br.com.voemais.services.LoginService;
 
 @RestController
 @RequestMapping("/login")
-@CrossOrigin(origins = "https://voe-mais.herokuapp.com/")
+@CrossOrigin(origins = "https://voe-mais.herokuapp.com")
 public class LoginResources {
 	
 	@Autowired
